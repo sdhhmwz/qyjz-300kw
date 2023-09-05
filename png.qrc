@@ -1,0 +1,26 @@
+<RCC>
+    <qresource prefix="/">
+        <file>images/weather.jpg</file>
+        <file>images/waiting.png</file>
+        <file>images/setting_select.png</file>
+        <file>images/setting_noSelect.png</file>
+        <file>images/running.png</file>
+        <file>images/mainwinBtn_select.png</file>
+        <file>images/mainwinBtn_noselect.png</file>
+        <file>images/logo.png</file>
+        <file>images/inputbg.png</file>
+        <file>images/error.png</file>
+        <file>images/charge_select.png</file>
+        <file>images/charge_noSelect.png</file>
+        <file>images/btnselect.png</file>
+        <file>images/btnnoselect.png</file>
+        <file>images/bgnotitle.png</file>
+        <file>images/backbtn.png</file>
+        <file>images/my.png</file>
+        <file>images/cus.png</file>
+        <file>images/but.png</file>
+        <file>images/2.png</file>
+        <file>images/data.png</file>
+        <file>images/background.png</file>
+    </qresource>
+</RCC>

@@ -1,0 +1,329 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MonitorWindow</class>
+ <widget class="QWidget" name="MonitorWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1024</width>
+    <height>600</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">#MonitorWindow{border-image: url(:/images/cus.png);}</string>
+  </property>
+  <widget class="QPushButton" name="pushButton">
+   <property name="geometry">
+    <rect>
+     <x>960</x>
+     <y>20</y>
+     <width>51</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">font:bold 40px &quot;Ubuntu&quot;;
+border-image: url(:/images/but.png);
+color:rgb(253,252,252)</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QWidget" name="layoutWidget_10">
+   <property name="geometry">
+    <rect>
+     <x>125</x>
+     <y>320</y>
+     <width>127</width>
+     <height>181</height>
+    </rect>
+   </property>
+   <layout class="QVBoxLayout" name="verticalLayout_14">
+    <item>
+     <widget class="QLabel" name="label_41">
+      <property name="styleSheet">
+       <string notr="true">font: 25px &quot;Ubuntu&quot;;
+color: rgb(173, 127, 168);</string>
+      </property>
+      <property name="text">
+       <string>电池电压:</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QLabel" name="label_46">
+      <property name="styleSheet">
+       <string notr="true">font: 25px &quot;Ubuntu&quot;;
+color: rgb(173, 127, 168);</string>
+      </property>
+      <property name="text">
+       <string>输出电流：</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QLabel" name="label_48">
+      <property name="styleSheet">
+       <string notr="true">font: 25px &quot;Ubuntu&quot;;
+color: rgb(173, 127, 168);</string>
+      </property>
+      <property name="text">
+       <string>输出功率：</string>
+      </property>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QWidget" name="layoutWidget_11">
+   <property name="geometry">
+    <rect>
+     <x>380</x>
+     <y>320</y>
+     <width>42</width>
+     <height>181</height>
+    </rect>
+   </property>
+   <layout class="QVBoxLayout" name="verticalLayout_15">
+    <item>
+     <widget class="QLabel" name="label_218">
+      <property name="styleSheet">
+       <string notr="true">font: 25px &quot;Ubuntu&quot;;
+color: rgb(173, 127, 168);</string>
+      </property>
+      <property name="text">
+       <string>V</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QLabel" name="label_219">
+      <property name="styleSheet">
+       <string notr="true">font: 25px &quot;Ubuntu&quot;;
+color: rgb(173, 127, 168);</string>
+      </property>
+      <property name="text">
+       <string>A</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QLabel" name="label_222">
+      <property name="styleSheet">
+       <string notr="true">font: 25px &quot;Ubuntu&quot;;
+color: rgb(173, 127, 168);</string>
+      </property>
+      <property name="text">
+       <string>KW</string>
+      </property>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QWidget" name="layoutWidget_12">
+   <property name="geometry">
+    <rect>
+     <x>252</x>
+     <y>320</y>
+     <width>121</width>
+     <height>181</height>
+    </rect>
+   </property>
+   <layout class="QVBoxLayout" name="verticalLayout_16">
+    <item>
+     <widget class="QLabel" name="label_229">
+      <property name="styleSheet">
+       <string notr="true">
+color: rgb(0, 0, 0);
+font: 28px &quot;Ubuntu&quot;;</string>
+      </property>
+      <property name="text">
+       <string>000.000</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QLabel" name="label_239">
+      <property name="styleSheet">
+       <string notr="true">font: 28px &quot;Ubuntu&quot;;
+color: rgb(0, 0, 0);</string>
+      </property>
+      <property name="text">
+       <string>000.000</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QLabel" name="label_243">
+      <property name="styleSheet">
+       <string notr="true">font: 28px &quot;Ubuntu&quot;;
+color: rgb(0, 0, 0);</string>
+      </property>
+      <property name="text">
+       <string>300.000</string>
+      </property>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QWidget" name="layoutWidget_13">
+   <property name="geometry">
+    <rect>
+     <x>737</x>
+     <y>320</y>
+     <width>121</width>
+     <height>181</height>
+    </rect>
+   </property>
+   <layout class="QVBoxLayout" name="verticalLayout_17">
+    <item>
+     <widget class="QLabel" name="label_230">
+      <property name="styleSheet">
+       <string notr="true">font: 27px &quot;Ubuntu&quot;;
+color: rgb(0, 0, 0);</string>
+      </property>
+      <property name="text">
+       <string>000.000</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QLabel" name="label_241">
+      <property name="styleSheet">
+       <string notr="true">font: 28px &quot;Ubuntu&quot;;
+color: rgb(0, 0, 0);</string>
+      </property>
+      <property name="text">
+       <string>000.000</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QLabel" name="label_244">
+      <property name="styleSheet">
+       <string notr="true">font: 28px &quot;Ubuntu&quot;;
+color: rgb(0, 0, 0);</string>
+      </property>
+      <property name="text">
+       <string>300.000</string>
+      </property>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QWidget" name="layoutWidget_14">
+   <property name="geometry">
+    <rect>
+     <x>865</x>
+     <y>320</y>
+     <width>42</width>
+     <height>181</height>
+    </rect>
+   </property>
+   <layout class="QVBoxLayout" name="verticalLayout_18">
+    <item>
+     <widget class="QLabel" name="label_220">
+      <property name="styleSheet">
+       <string notr="true">font: 25px &quot;Ubuntu&quot;;
+color: rgb(173, 127, 168);;</string>
+      </property>
+      <property name="text">
+       <string>V</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QLabel" name="label_221">
+      <property name="styleSheet">
+       <string notr="true">font: 25px &quot;Ubuntu&quot;;
+color: rgb(173, 127, 168);</string>
+      </property>
+      <property name="text">
+       <string>A</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QLabel" name="label_223">
+      <property name="styleSheet">
+       <string notr="true">font: 25px &quot;Ubuntu&quot;;
+color: rgb(173, 127, 168);</string>
+      </property>
+      <property name="text">
+       <string>KW</string>
+      </property>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QWidget" name="layoutWidget_15">
+   <property name="geometry">
+    <rect>
+     <x>610</x>
+     <y>320</y>
+     <width>127</width>
+     <height>181</height>
+    </rect>
+   </property>
+   <layout class="QVBoxLayout" name="verticalLayout_19">
+    <item>
+     <widget class="QLabel" name="label_42">
+      <property name="styleSheet">
+       <string notr="true">font: 25px &quot;Ubuntu&quot;;
+color: rgb(173, 127, 168);</string>
+      </property>
+      <property name="text">
+       <string>电池电压:</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QLabel" name="label_47">
+      <property name="styleSheet">
+       <string notr="true">font: 25px &quot;Ubuntu&quot;;
+color: rgb(173, 127, 168);</string>
+      </property>
+      <property name="text">
+       <string>输出电流：</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QLabel" name="label_49">
+      <property name="styleSheet">
+       <string notr="true">font: 25px &quot;Ubuntu&quot;;
+color: rgb(173, 127, 168);</string>
+      </property>
+      <property name="text">
+       <string>输出功率：</string>
+      </property>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QComboBox" name="comboBox">
+   <property name="enabled">
+    <bool>true</bool>
+   </property>
+   <property name="geometry">
+    <rect>
+     <x>130</x>
+     <y>104</y>
+     <width>151</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <item>
+    <property name="text">
+     <string>750V300A300KW</string>
+    </property>
+   </item>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

@@ -1,0 +1,861 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>WorkStatus</class>
+ <widget class="QWidget" name="WorkStatus">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1024</width>
+    <height>600</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">#WorkStatus{background-image: url(:/images/background.png);}</string>
+  </property>
+  <widget class="QLabel" name="label_title">
+   <property name="geometry">
+    <rect>
+     <x>150</x>
+     <y>10</y>
+     <width>231</width>
+     <height>51</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">font:bold 23px &quot;Ubuntu&quot;;
+color:rgb(253,252,252)</string>
+   </property>
+   <property name="text">
+    <string>蓄电池充放电检测仪</string>
+   </property>
+  </widget>
+  <widget class="QWidget" name="layoutWidget_10">
+   <property name="geometry">
+    <rect>
+     <x>50</x>
+     <y>180</y>
+     <width>121</width>
+     <height>341</height>
+    </rect>
+   </property>
+   <layout class="QVBoxLayout" name="verticalLayout_14">
+    <item>
+     <widget class="QLabel" name="label_41">
+      <property name="styleSheet">
+       <string notr="true">font: 17px &quot;Ubuntu&quot;;
+color: rgb(253, 252, 252);</string>
+      </property>
+      <property name="text">
+       <string>运行模式状态:</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QLabel" name="label_46">
+      <property name="styleSheet">
+       <string notr="true">font: 17px &quot;Ubuntu&quot;;
+color: rgb(253, 252, 252);</string>
+      </property>
+      <property name="text">
+       <string>设备运行状态：</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QLabel" name="label_107">
+      <property name="styleSheet">
+       <string notr="true">font: 17px &quot;Ubuntu&quot;;
+color: rgb(253, 252, 252);</string>
+      </property>
+      <property name="text">
+       <string>停机原因：</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QLabel" name="label_108">
+      <property name="styleSheet">
+       <string notr="true">font: 17px &quot;Ubuntu&quot;;
+color: rgb(253, 252, 252);</string>
+      </property>
+      <property name="text">
+       <string>通道运行状态:</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QLabel" name="label_109">
+      <property name="styleSheet">
+       <string notr="true">font: 17px &quot;Ubuntu&quot;;
+color: rgb(253, 252, 252);</string>
+      </property>
+      <property name="text">
+       <string>急停信号反馈:</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QLabel" name="label_200">
+      <property name="styleSheet">
+       <string notr="true">font: 17px &quot;Ubuntu&quot;;
+color: rgb(253, 252, 252);</string>
+      </property>
+      <property name="text">
+       <string>BMS接点反馈:</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QLabel" name="label_213">
+      <property name="styleSheet">
+       <string notr="true">font: 17px &quot;Ubuntu&quot;;
+color: rgb(253, 252, 252);</string>
+      </property>
+      <property name="text">
+       <string>电抗1/3过温:</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QLabel" name="label_214">
+      <property name="styleSheet">
+       <string notr="true">font: 17px &quot;Ubuntu&quot;;
+color: rgb(253, 252, 252);</string>
+      </property>
+      <property name="text">
+       <string>电抗2/4过温：</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QLabel" name="label_215">
+      <property name="styleSheet">
+       <string notr="true">font: 17px &quot;Ubuntu&quot;;
+color: rgb(253, 252, 252);</string>
+      </property>
+      <property name="text">
+       <string>交流故障信号：</string>
+      </property>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QWidget" name="layoutWidget_12">
+   <property name="geometry">
+    <rect>
+     <x>170</x>
+     <y>180</y>
+     <width>110</width>
+     <height>341</height>
+    </rect>
+   </property>
+   <layout class="QVBoxLayout" name="verticalLayout_16">
+    <item>
+     <widget class="QLabel" name="label_229">
+      <property name="styleSheet">
+       <string notr="true">font: 18px &quot;Ubuntu&quot;;
+color: rgb(253, 252, 252);</string>
+      </property>
+      <property name="text">
+       <string>0</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QLabel" name="label_230">
+      <property name="styleSheet">
+       <string notr="true">font: 18px &quot;Ubuntu&quot;;
+color: rgb(253, 252, 252);</string>
+      </property>
+      <property name="text">
+       <string>0</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QLabel" name="label_231">
+      <property name="styleSheet">
+       <string notr="true">font: 18px &quot;Ubuntu&quot;;
+color: rgb(253, 252, 252);</string>
+      </property>
+      <property name="text">
+       <string>0</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QLabel" name="label_232">
+      <property name="styleSheet">
+       <string notr="true">font: 18px &quot;Ubuntu&quot;;
+color: rgb(253, 252, 252);</string>
+      </property>
+      <property name="text">
+       <string>0</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QLabel" name="label_233">
+      <property name="styleSheet">
+       <string notr="true">font: 18px &quot;Ubuntu&quot;;
+color: rgb(253, 252, 252);</string>
+      </property>
+      <property name="text">
+       <string>0</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QLabel" name="label_234">
+      <property name="styleSheet">
+       <string notr="true">font: 18px &quot;Ubuntu&quot;;
+color: rgb(253, 252, 252);</string>
+      </property>
+      <property name="text">
+       <string>0</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QLabel" name="label_235">
+      <property name="styleSheet">
+       <string notr="true">font: 18px &quot;Ubuntu&quot;;
+color: rgb(253, 252, 252);</string>
+      </property>
+      <property name="text">
+       <string>0</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QLabel" name="label_236">
+      <property name="styleSheet">
+       <string notr="true">font: 18px &quot;Ubuntu&quot;;
+color: rgb(253, 252, 252);</string>
+      </property>
+      <property name="text">
+       <string>0</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QLabel" name="label_237">
+      <property name="styleSheet">
+       <string notr="true">font: 18px &quot;Ubuntu&quot;;
+color: rgb(253, 252, 252);</string>
+      </property>
+      <property name="text">
+       <string>0</string>
+      </property>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QLabel" name="label_67">
+   <property name="geometry">
+    <rect>
+     <x>50</x>
+     <y>140</y>
+     <width>121</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">font: 25px &quot;Ubuntu&quot;;
+color: rgb(253, 252, 252);</string>
+   </property>
+   <property name="text">
+    <string>直流通道1</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_240">
+   <property name="geometry">
+    <rect>
+     <x>340</x>
+     <y>140</y>
+     <width>251</width>
+     <height>391</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: rgb(79, 60, 133);</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QWidget" name="layoutWidget_13">
+   <property name="geometry">
+    <rect>
+     <x>470</x>
+     <y>180</y>
+     <width>110</width>
+     <height>341</height>
+    </rect>
+   </property>
+   <layout class="QVBoxLayout" name="verticalLayout_17">
+    <item>
+     <widget class="QLabel" name="label_238">
+      <property name="styleSheet">
+       <string notr="true">font: 18px &quot;Ubuntu&quot;;
+color: rgb(253, 252, 252);</string>
+      </property>
+      <property name="text">
+       <string>0</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QLabel" name="label_239">
+      <property name="styleSheet">
+       <string notr="true">font: 18px &quot;Ubuntu&quot;;
+color: rgb(253, 252, 252);</string>
+      </property>
+      <property name="text">
+       <string>0</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QLabel" name="label_241">
+      <property name="styleSheet">
+       <string notr="true">font: 18px &quot;Ubuntu&quot;;
+color: rgb(253, 252, 252);</string>
+      </property>
+      <property name="text">
+       <string>0</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QLabel" name="label_242">
+      <property name="styleSheet">
+       <string notr="true">font: 18px &quot;Ubuntu&quot;;
+color: rgb(253, 252, 252);</string>
+      </property>
+      <property name="text">
+       <string>0</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QLabel" name="label_243">
+      <property name="styleSheet">
+       <string notr="true">font: 18px &quot;Ubuntu&quot;;
+color: rgb(253, 252, 252);</string>
+      </property>
+      <property name="text">
+       <string>0</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QLabel" name="label_244">
+      <property name="styleSheet">
+       <string notr="true">font: 18px &quot;Ubuntu&quot;;
+color: rgb(253, 252, 252);</string>
+      </property>
+      <property name="text">
+       <string>0</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QLabel" name="label_245">
+      <property name="styleSheet">
+       <string notr="true">font: 18px &quot;Ubuntu&quot;;
+color: rgb(253, 252, 252);</string>
+      </property>
+      <property name="text">
+       <string>0</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QLabel" name="label_246">
+      <property name="styleSheet">
+       <string notr="true">font: 18px &quot;Ubuntu&quot;;
+color: rgb(253, 252, 252);</string>
+      </property>
+      <property name="text">
+       <string>0</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QLabel" name="label_247">
+      <property name="styleSheet">
+       <string notr="true">font: 18px &quot;Ubuntu&quot;;
+color: rgb(253, 252, 252);</string>
+      </property>
+      <property name="text">
+       <string>0</string>
+      </property>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QLabel" name="label_68">
+   <property name="geometry">
+    <rect>
+     <x>350</x>
+     <y>140</y>
+     <width>121</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">font: 25px &quot;Ubuntu&quot;;
+color: rgb(253, 252, 252);</string>
+   </property>
+   <property name="text">
+    <string>直流通道2</string>
+   </property>
+  </widget>
+  <widget class="QWidget" name="layoutWidget_11">
+   <property name="geometry">
+    <rect>
+     <x>350</x>
+     <y>180</y>
+     <width>121</width>
+     <height>341</height>
+    </rect>
+   </property>
+   <layout class="QVBoxLayout" name="verticalLayout_15">
+    <item>
+     <widget class="QLabel" name="label_42">
+      <property name="styleSheet">
+       <string notr="true">font: 17px &quot;Ubuntu&quot;;
+color: rgb(253, 252, 252);</string>
+      </property>
+      <property name="text">
+       <string>运行模式状态:</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QLabel" name="label_47">
+      <property name="styleSheet">
+       <string notr="true">font: 17px &quot;Ubuntu&quot;;
+color: rgb(253, 252, 252);</string>
+      </property>
+      <property name="text">
+       <string>设备运行状态：</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QLabel" name="label_110">
+      <property name="styleSheet">
+       <string notr="true">font: 17px &quot;Ubuntu&quot;;
+color: rgb(253, 252, 252);</string>
+      </property>
+      <property name="text">
+       <string>停机原因：</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QLabel" name="label_111">
+      <property name="styleSheet">
+       <string notr="true">font: 17px &quot;Ubuntu&quot;;
+color: rgb(253, 252, 252);</string>
+      </property>
+      <property name="text">
+       <string>通道运行状态:</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QLabel" name="label_112">
+      <property name="styleSheet">
+       <string notr="true">font: 17px &quot;Ubuntu&quot;;
+color: rgb(253, 252, 252);</string>
+      </property>
+      <property name="text">
+       <string>急停信号反馈:</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QLabel" name="label_201">
+      <property name="styleSheet">
+       <string notr="true">font: 17px &quot;Ubuntu&quot;;
+color: rgb(253, 252, 252);</string>
+      </property>
+      <property name="text">
+       <string>BMS接点反馈:</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QLabel" name="label_216">
+      <property name="styleSheet">
+       <string notr="true">font: 17px &quot;Ubuntu&quot;;
+color: rgb(253, 252, 252);</string>
+      </property>
+      <property name="text">
+       <string>电抗1/3过温:</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QLabel" name="label_217">
+      <property name="styleSheet">
+       <string notr="true">font: 17px &quot;Ubuntu&quot;;
+color: rgb(253, 252, 252);</string>
+      </property>
+      <property name="text">
+       <string>电抗2/4过温：</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QLabel" name="label_218">
+      <property name="styleSheet">
+       <string notr="true">font: 17px &quot;Ubuntu&quot;;
+color: rgb(253, 252, 252);</string>
+      </property>
+      <property name="text">
+       <string>交流故障信号：</string>
+      </property>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QLabel" name="label_248">
+   <property name="geometry">
+    <rect>
+     <x>40</x>
+     <y>140</y>
+     <width>251</width>
+     <height>391</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: rgb(79, 60, 133);</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_249">
+   <property name="geometry">
+    <rect>
+     <x>640</x>
+     <y>140</y>
+     <width>371</width>
+     <height>391</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: rgb(79, 60, 133);</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QWidget" name="layoutWidget_14">
+   <property name="geometry">
+    <rect>
+     <x>650</x>
+     <y>180</y>
+     <width>195</width>
+     <height>341</height>
+    </rect>
+   </property>
+   <layout class="QVBoxLayout" name="verticalLayout_18">
+    <item>
+     <widget class="QLabel" name="label_43">
+      <property name="styleSheet">
+       <string notr="true">font: 17px &quot;Ubuntu&quot;;
+color: rgb(253, 252, 252);</string>
+      </property>
+      <property name="text">
+       <string>运行模式状态:</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QLabel" name="label_48">
+      <property name="styleSheet">
+       <string notr="true">font: 17px &quot;Ubuntu&quot;;
+color: rgb(253, 252, 252);</string>
+      </property>
+      <property name="text">
+       <string>设备运行状态：</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QLabel" name="label_113">
+      <property name="styleSheet">
+       <string notr="true">font: 17px &quot;Ubuntu&quot;;
+color: rgb(253, 252, 252);</string>
+      </property>
+      <property name="text">
+       <string>交流主接触器KM6反馈：</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QLabel" name="label_114">
+      <property name="styleSheet">
+       <string notr="true">font: 17px &quot;Ubuntu&quot;;
+color: rgb(253, 252, 252);</string>
+      </property>
+      <property name="text">
+       <string>交流充电接触器KM7反馈:</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QLabel" name="label_115">
+      <property name="styleSheet">
+       <string notr="true">font: 17px &quot;Ubuntu&quot;;
+color: rgb(253, 252, 252);</string>
+      </property>
+      <property name="text">
+       <string>直流故障信号反馈:</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QLabel" name="label_202">
+      <property name="styleSheet">
+       <string notr="true">font: 17px &quot;Ubuntu&quot;;
+color: rgb(253, 252, 252);</string>
+      </property>
+      <property name="text">
+       <string>主断路器Q2反馈:</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QLabel" name="label_219">
+      <property name="styleSheet">
+       <string notr="true">font: 17px &quot;Ubuntu&quot;;
+color: rgb(253, 252, 252);</string>
+      </property>
+      <property name="text">
+       <string>急停开关S1反馈:</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QLabel" name="label_220">
+      <property name="styleSheet">
+       <string notr="true">font: 17px &quot;Ubuntu&quot;;
+color: rgb(253, 252, 252);</string>
+      </property>
+      <property name="text">
+       <string>变压器超温报警：</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QLabel" name="label_221">
+      <property name="styleSheet">
+       <string notr="true">font: 17px &quot;Ubuntu&quot;;
+color: rgb(253, 252, 252);</string>
+      </property>
+      <property name="text">
+       <string>变压器超温预警：</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QLabel" name="label_222">
+      <property name="styleSheet">
+       <string notr="true">font: 17px &quot;Ubuntu&quot;;
+color: rgb(253, 252, 252);</string>
+      </property>
+      <property name="text">
+       <string>相序反馈：</string>
+      </property>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QLabel" name="label_69">
+   <property name="geometry">
+    <rect>
+     <x>650</x>
+     <y>140</y>
+     <width>121</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">font: 25px &quot;Ubuntu&quot;;
+color: rgb(253, 252, 252);</string>
+   </property>
+   <property name="text">
+    <string>交流通道</string>
+   </property>
+  </widget>
+  <widget class="QWidget" name="layoutWidget_15">
+   <property name="geometry">
+    <rect>
+     <x>850</x>
+     <y>180</y>
+     <width>151</width>
+     <height>341</height>
+    </rect>
+   </property>
+   <layout class="QVBoxLayout" name="verticalLayout_19">
+    <item>
+     <widget class="QLabel" name="label_250">
+      <property name="styleSheet">
+       <string notr="true">font: 18px &quot;Ubuntu&quot;;
+color: rgb(253, 252, 252);</string>
+      </property>
+      <property name="text">
+       <string>恒定并网直流恒压 </string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QLabel" name="label_251">
+      <property name="styleSheet">
+       <string notr="true">font: 18px &quot;Ubuntu&quot;;
+color: rgb(253, 252, 252);</string>
+      </property>
+      <property name="text">
+       <string>0</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QLabel" name="label_252">
+      <property name="styleSheet">
+       <string notr="true">font: 18px &quot;Ubuntu&quot;;
+color: rgb(253, 252, 252);</string>
+      </property>
+      <property name="text">
+       <string>0</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QLabel" name="label_253">
+      <property name="styleSheet">
+       <string notr="true">font: 18px &quot;Ubuntu&quot;;
+color: rgb(253, 252, 252);</string>
+      </property>
+      <property name="text">
+       <string>0</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QLabel" name="label_254">
+      <property name="styleSheet">
+       <string notr="true">font: 18px &quot;Ubuntu&quot;;
+color: rgb(253, 252, 252);</string>
+      </property>
+      <property name="text">
+       <string>0</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QLabel" name="label_255">
+      <property name="styleSheet">
+       <string notr="true">font: 18px &quot;Ubuntu&quot;;
+color: rgb(253, 252, 252);</string>
+      </property>
+      <property name="text">
+       <string>0</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QLabel" name="label_256">
+      <property name="styleSheet">
+       <string notr="true">font: 18px &quot;Ubuntu&quot;;
+color: rgb(253, 252, 252);</string>
+      </property>
+      <property name="text">
+       <string>0</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QLabel" name="label_257">
+      <property name="styleSheet">
+       <string notr="true">font: 18px &quot;Ubuntu&quot;;
+color: rgb(253, 252, 252);</string>
+      </property>
+      <property name="text">
+       <string>0</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QLabel" name="label_258">
+      <property name="styleSheet">
+       <string notr="true">font: 18px &quot;Ubuntu&quot;;
+color: rgb(253, 252, 252);</string>
+      </property>
+      <property name="text">
+       <string>0</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QLabel" name="label_259">
+      <property name="styleSheet">
+       <string notr="true">font: 18px &quot;Ubuntu&quot;;
+color: rgb(253, 252, 252);</string>
+      </property>
+      <property name="text">
+       <string>0</string>
+      </property>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QPushButton" name="btnexit">
+   <property name="geometry">
+    <rect>
+     <x>940</x>
+     <y>20</y>
+     <width>51</width>
+     <height>61</height>
+    </rect>
+   </property>
+   <property name="focusPolicy">
+    <enum>Qt::NoFocus</enum>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">border-image: url(:/images/backbtn.png);
+font: 20px &quot;Ubuntu&quot;; 
+color: rgb(253, 252, 252);</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <zorder>label_248</zorder>
+  <zorder>label_240</zorder>
+  <zorder>label_title</zorder>
+  <zorder>layoutWidget_10</zorder>
+  <zorder>layoutWidget_12</zorder>
+  <zorder>label_67</zorder>
+  <zorder>layoutWidget_13</zorder>
+  <zorder>label_68</zorder>
+  <zorder>layoutWidget_11</zorder>
+  <zorder>label_249</zorder>
+  <zorder>layoutWidget_14</zorder>
+  <zorder>label_69</zorder>
+  <zorder>layoutWidget_15</zorder>
+  <zorder>btnexit</zorder>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
